@@ -209,7 +209,9 @@ form label{
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
+    max-width: 600px;
     border-radius: 3px;
+    resize: none;
 
 }
 #firstname{
@@ -258,8 +260,108 @@ form label{
     padding-right: 30px;
 }
 
+@media only screen and (max-width: 1000px) {
+    .contenedor{
+    grid-template: auto auto auto auto/ 100% ;
+    grid-template-areas:
+                         "header" 
+                         "logo"
+                         "cuerpo"
+                         "pie" ;
+}
+
+.grillaDeProductos{
+    display: grid;
+    grid-area: cuerpo;
+    grid-template-columns: auto auto;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+}
 
 
+
+
+@media only screen and (max-width: 800px) {
+    .contenedor{
+    grid-template: auto auto auto auto/ 100% ;
+    grid-template-areas:
+                         "header" 
+                         "logo"
+                         "cuerpo"
+                         "pie" ;
+}
+.logo{
+    justify-content: center;
+    padding: 0px;
+    background: none;
+    z-index: 1;
+}
+.imagen-logo{
+    width: 260px;
+    margin: 0;
+    opacity: 15%;
+    padding: 10px;
+}
+.menu{
+    font-size: 0.8em;
+    margin: 0px;
+    justify-content: center;
+    padding: 0;
+    z-index: 2;
+    opacity: 70%;   
+}
+.home{
+    margin-top: -100px;
+}
+.home h1, h2, h3{
+    font-size: 1em;
+}
+.imagen-reparando{
+    width: 100%;
+}
+
+.cuerpo-formulario{
+    margin-left: 10px;
+    
+}
+
+.input-padron{
+    width: 80%;
+}
+
+.enviar{
+    font-size: 18px;
+    width: 65%;
+}
+.mapa{
+    width: 90%;
+    margin: 0 0 25px 10px;
+    box-shadow: 5px 5px 15px 5px black;
+}
+.grillaDeProductos{
+    display: grid;
+    grid-area: cuerpo;
+    grid-template-columns: auto auto;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.imagenProductos{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 180px;
+    margin: 10px 5px;
+    padding: 5px;
+    
+}
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -318,4 +420,25 @@ form label{
     width: 90%;
     margin: 0 0 25px 10px;
     box-shadow: 5px 5px 15px 5px black;
-}}
+}
+.grillaDeProductos{
+    display: grid;
+    grid-area: cuerpo;
+    grid-template-columns: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.imagenProductos{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 250px;
+    margin: 10px 5px;
+    padding: 5px;
+    
+}
+
+}
