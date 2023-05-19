@@ -198,6 +198,29 @@ h3 {
 .cuerpo-formulario {
     margin-left: 60px;
     grid-area: cuerpo;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.noticias img{
+width: 100px;
+margin: 25px 0 5px 0;
+display: block;
+
+}
+.noticias p{
+    display:inline;
+    margin: 2px;
+}
+.noticias a{
+    color: rgb(27, 201, 50);
+}
+
+.noticias{
+    display: flexbox;
+    font-size: 13px;
+    padding: 10px;
+    margin-right: 20px;
+
 }
 
 form {
@@ -474,6 +497,9 @@ form label {
         list-style: none;
         margin-top: 5px;
         padding: 10px;
+    }
+    .noticias{
+        display: none;
     }
 
 
