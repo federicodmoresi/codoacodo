@@ -273,23 +273,24 @@ form label {
     border-radius: 5px;
     padding-right: 30px;
 }
-.clima{
-        grid-area: header;
-        display: flex;
-        justify-content:space-evenly;
-        margin-left: 80px;
-        align-items: center;
-        height: 70px;
-        color: white;
-        font-weight: bold;
-        font-size: 12px;
-       
+
+.clima {
+    grid-area: header;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 80px;
+    align-items: center;
+    height: 70px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+
 }
 
 @media only screen and (max-width: 1000px) {
-.menu{
-    justify-content: right;
-}
+    .menu {
+        justify-content: right;
+    }
 
     .grillaDeProductos {
         display: grid;
@@ -301,7 +302,8 @@ form label {
         gap: 40px;
         margin-bottom: 50px;
     }
-    .clima{
+
+    .clima {
         display: none;
     }
 }
@@ -404,7 +406,8 @@ form label {
         margin-top: 5px;
         padding: 10px;
     }
-    .clima{
+
+    .clima {
         display: none;
     }
 
@@ -495,9 +498,8 @@ form label {
         margin-top: 5px;
         padding: 10px;
     }
-    .clima{
+
+    .clima {
         display: none;
     }
-
-
 }

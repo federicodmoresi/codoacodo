@@ -1,4 +1,4 @@
-let clima=document.querySelector('#clima')
+let clima = document.querySelector('#clima')
 const url = 'https://weatherapi-com.p.rapidapi.com/current.json?q=Rosario';
 const options = {
     method: 'GET',
@@ -10,8 +10,7 @@ const options = {
 
 function traerApi() {
 
-
-    fetch(url,options)
+    fetch(url, options)
         .then(res => res.json())
         .then(data => {
             clima.innerHTML = `

@@ -51,8 +51,6 @@ function ValidarTel() {
 
 }
 
-
-
 function validarDatos() {
 
 
