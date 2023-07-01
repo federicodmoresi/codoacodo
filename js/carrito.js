@@ -6,6 +6,7 @@ const app = Vue.createApp({
       productos: [],
       mostrarCarrito: false,
       carrito: [],
+      total:0
     };
   },
   created() {
@@ -36,7 +37,7 @@ const app = Vue.createApp({
       })
         .then(response => response.json())
         .then(data => {
-          alert(data.message);
+          window.location.href = "carrito.html";
         })
         .catch(error => {
           console.error('Error al agregar el producto al carrito:', error);
@@ -56,7 +57,7 @@ const app = Vue.createApp({
       })
         .then(response => response.json())
         .then(data => {
-          alert(data.message);
+          window.location.href = "carrito.html";
         })
         .catch(error => {
           console.error('Error al restar el producto del carrito:', error);

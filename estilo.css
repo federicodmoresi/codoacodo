@@ -16,6 +16,71 @@ body {
 
 }
 
+.carrito{
+    display: grid;
+    grid-area: cuerpo;
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+    align-content: space-around;
+    
+}
+.carrito p{
+    text-align: right;
+    font-weight: bold;
+    margin: 100px 50px 0 0;
+}
+
+.carrito tr td{
+    padding: 10px;
+    text-align: center;
+}
+
+.botonMas{
+    margin:5px;
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: rgb(15, 227, 43);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+
+}
+
+.botonMas:hover {
+
+    background: rgb(11, 118, 25);
+    transform: scale(1.1);
+
+}   
+
+.botonMenos{
+    margin:5px;
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: rgb(227, 15, 15);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+
+}
+
+.botonMenos:hover {
+
+    background: rgb(118, 11, 11);
+    transform: scale(1.1);
+
+}
+
+
 .grillaDeProductos {
     display: grid;
     grid-area: cuerpo;
