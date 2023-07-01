@@ -287,6 +287,27 @@ form label {
 
 }
 
+.boton_carrito{
+    width: 20%;
+    padding: 15px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgb(15, 227, 43);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+
+}
+
+.boton_carrito:hover {
+
+    background: rgb(11, 118, 25);
+    transform: scale(1.05);
+  
+}
+
 @media only screen and (max-width: 1000px) {
     .menu {
         justify-content: right;
@@ -307,6 +328,9 @@ form label {
         display: none;
     }
 }
+.boton_carrito{
+    font-size: 13px;
+}
 
 @media only screen and (max-width: 800px) {
     .contenedor {
@@ -316,6 +340,10 @@ form label {
             "logo"
             "cuerpo"
             "pie";
+    }
+    .boton_carrito{
+        font-size: 15px;
+        width: 30%;
     }
 
     .logo {
@@ -368,6 +396,7 @@ form label {
         font-size: 18px;
         width: 65%;
     }
+
 
     .mapa {
         width: 90%;
@@ -457,6 +486,10 @@ form label {
 
     .enviar {
         font-size: 18px;
+        width: 65%;
+    }
+    .boton_carrito{
+        font-size: 15px;
         width: 65%;
     }
 
