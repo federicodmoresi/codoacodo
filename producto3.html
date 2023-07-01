@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+ 
 </head>
 
 <body>
@@ -26,12 +27,14 @@
                 <a href="nosotros.html">NOSOTROS</a>
                 <a class="pagina-actual" href="productos.html">PRODUCTOS</a>
                 <a href="contacto.html">CONTACTO</a>
+                <a href="intranet.html">INTRANET</a>
+                <a href="carrito.html">&#128722;</a>
             </header>
         </nav>
 
         <main class="grillaDescripcionProductos">
             <div><img src="imagenes/notebook-acer1.png" alt=""></div>
-            <div>
+            <div id="app">
                 <h1> Acer Aspire 3 A315-58-55VU-ES</h1>
                 <h3>PROCESADOR</h3>
                 <ul>
@@ -74,6 +77,7 @@
                     <li>Audio: Dos altavoces estereo incorporados.</li>
                     <li>Microfono digital incorporado.</li>
                 </ul>
+                <button @click="agregarAlCarrito(3)" class="boton_carrito">&nbsp;&nbsp;<b>&#128722; Agregar al carrito</b>&nbsp;&nbsp;</button>
             </div>
             <dir><a href="productos.html">
                     <h3>Regresar a productos</h3>
@@ -94,6 +98,7 @@
         </footer>
     </div>
     <script src="js/api.js"></script>
+    <script src="js/vue.js"></script>
 </body>
 
 </html>

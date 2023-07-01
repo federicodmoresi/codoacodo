@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="logo"><img class="imagen-logo" src="imagenes/logo.png" alt="Logo"></div>
+
+        <nav class="menu">
+            <div class="clima" id="clima">
+
+            </div>
+            <header>
+                <a href="index.html">HOME</a>
+                <a href="nosotros.html">NOSOTROS</a>
+                <a href="productos.html">PRODUCTOS</a>
+                <a href="contacto.html">CONTACTO</a>
+                <a href="intranet.html">INTRANET</a>
+                <a class="pagina-actual" href="carrito.html">&#128722;</a>
+            </header>
+        </nav>
+        <div id="app">
+            <h1>Carrito de compras</h1>
+
+            <h3>Productos en el carrito:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Descripción</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr v-for="item in carrito" :key="item.codigo">
+                        <td>{{ item.codigo }}</td>
+                        <td>{{ item.descripcion }}</td>
+                        <td align="right">{{ item.cantidad }}</td>
+                        <td align="right">&nbsp; &nbsp; {{ item.precio }}</td>
+                        <td>
+                            <button @click="agregarAlCarrito(item)">&nbsp;&nbsp;<b>+</b>&nbsp;&nbsp;</button>
+                            <button @click="restarDelCarrito(item)">&nbsp;&nbsp;<b>-</b>&nbsp;&nbsp;</button>
+                          </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+            <script src="js/api.js"></script>
+            <script src="js/vue.js"></script>
+</body>
+
+</html>

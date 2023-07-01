@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
 </head>
 
 <body>
@@ -26,12 +26,14 @@
                 <a href="nosotros.html">NOSOTROS</a>
                 <a class="pagina-actual" href="productos.html">PRODUCTOS</a>
                 <a href="contacto.html">CONTACTO</a>
+                <a href="intranet.html">INTRANET</a>
+                <a href="carrito.html">&#128722;</a>
             </header>
         </nav>
 
         <main class="grillaDescripcionProductos">
             <div><img src="imagenes/LenovoIdeapadGaming.png" alt=""></div>
-            <div>
+            <div id="app">
                 <h1> Lenovo IdeaPad Gamming</h1>
                 <h3>PROCESADOR</h3>
                 <ul>
@@ -74,6 +76,7 @@
                     <li>Microfono incorporado</li>
                     <li>Entrada para microfono</li>
                 </ul>
+                <button @click="agregarAlCarrito(2)" class="boton_carrito">&nbsp;&nbsp;<b>&#128722; Agregar al carrito</b>&nbsp;&nbsp;</button>
             </div>
             <dir><a href="productos.html">
                     <h3>Regresar a productos</h3>
@@ -81,7 +84,6 @@
         </main>
 
     </div>
-
     <div class="pie-pagina">
         <footer>
             <a href="http://www.facebook.com" target="_blank" rel="noopener"><img src="iconos/002-facebook.png"
@@ -94,6 +96,7 @@
         </footer>
     </div>
     <script src="js/api.js"></script>
+    <script src="js/vue.js"></script>
 </body>
 
 </html>

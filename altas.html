@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar producto</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="logo"><img class="imagen-logo" src="imagenes/logo.png" alt="Logo"></div>
+
+        <nav class="menu">
+            <div class="clima" id="clima">
+
+            </div>
+            <header>
+                <a class="pagina-actual" href="intranet.html">INTRANET</a>
+                <a href="index.html">Desconectar</a>
+            </header>
+        </nav>
+        <h1>Agregar Productos al Sistema</h1>
+        <form id="formulario">
+            <label for="codigo">Código:</label>
+            <input type="text" id="codigo" name="codigo" required><br>
+
+            <label for="descripcion">Descripción:</label>
+            <input type="text" id="descripcion" name="descripcion" required><br>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" required><br>
+
+            <label for="precio">Precio:</label>
+            <input type="number" step="0.01" id="precio" name="precio" required><br>
+
+            <button type="submit">Agregar Producto</button>
+            <a href="sistemaInterno.html">Menu principal</a>
+        </form>
+    </div>
+    <script src="js/altas.js"></script>
+</body>
+
+</html>
