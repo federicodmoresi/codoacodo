@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
 </head>
 
 <body>
@@ -71,6 +71,7 @@
                     <li>HDMI: Si 1.4</li>
                     <li>Salida de Auriculares/Micrófono: Si</li>
                 </ul>
+                <button @click="agregarAlCarrito(1)" class="boton_carrito">&nbsp;&nbsp;<b>&#128722; Agregar al carrito</b>&nbsp;&nbsp;</button>
             </div>
             <dir><a href="productos.html">
                     <h3>Regresar a productos</h3>
@@ -78,6 +79,59 @@
         </main>
 
     </div>
+    <script>
+        const URL = "https://fedemoresi.pythonanywhere.com/"
+    
+        const app = Vue.createApp({
+          data() {
+            return {
+              productos: [],
+              mostrarCarrito: false,
+              carrito: [],
+            };
+          },
+          created() {
+            this.obtenerProductos();
+          },
+          methods: {
+            obtenerProductos() {
+              fetch(URL + 'productos')
+                .then(response => response.json())
+                .then(data => {
+                  this.productos = data;
+                })
+                .catch(error => {
+                  console.error(URL + 'productos', error);
+                  alert('Error al obtener los productos.');
+                });
+            },
+            agregarAlCarrito(producto) {
+              fetch(URL + 'carrito', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                  codigo: producto,
+                  cantidad: 1, // Agregamos una unidad al carrito
+                }),
+              })
+                .then(response => response.json())
+                .then(data => {
+                  alert(data.message);
+                })
+                .catch(error => {
+                  console.error('Error al agregar el producto al carrito:', error);
+                  alert('Error al agregar el producto al carrito.');
+                });
+            },
+
+          },
+        });
+    
+        app.mount('#app');
+      </script>
+
 
     <div class="pie-pagina">
         <footer>
