@@ -23,15 +23,14 @@
             <header>
                 <a href="index.html">HOME</a>
                 <a href="nosotros.html">NOSOTROS</a>
-                <a  class="pagina-actual" href="productos.html">PRODUCTOS</a>
+                <a class="pagina-actual" href="productos.html">PRODUCTOS</a>
                 <a href="contacto.html">CONTACTO</a>
                 <a href="intranet.html">INTRANET</a>
                 <a href="carrito.html">&#128722;</a>
             </header>
         </nav>
         <div id="app">
-            <h1>Carrito de compras</h1>
-            <h3>Codo a Codo 2023</h3>
+            <h1>Listado de productos</h1>
             <table>
                 <thead>
                     <tr>
@@ -43,15 +42,16 @@
                     </tr>
                 </thead>
                 <tbody>
+
                     <tr v-for="producto in productos" :key="producto.codigo">
-                        <td>{{ producto.codigo }}</td>
-                        <td>{{ producto.descripcion }}</td>
-                        <td align="right">{{ producto.cantidad }}</td>
-                        <td align="right">&nbsp; &nbsp; {{ producto.precio }}</td>
-                        <td>
-                            <button @click="agregarAlCarrito(producto)">&nbsp;&nbsp;<b>+</b>&nbsp;&nbsp;</button>
-                            <button @click="restarDelCarrito(producto)">&nbsp;&nbsp;<b>-</b>&nbsp;&nbsp;</button>
-                        </td>
+                            <td>{{ producto.codigo }}</td>
+                            <td>{{ producto.descripcion }}</td>
+                            <td align="right">{{ producto.cantidad }}</td>
+                            <td align="right">&nbsp; &nbsp; {{ producto.precio }}</td>
+                            <td>
+                                <button @click="agregarAlCarrito(producto)">&nbsp;&nbsp;<b>+</b>&nbsp;&nbsp;</button>
+                                <button @click="restarDelCarrito(producto)">&nbsp;&nbsp;<b>-</b>&nbsp;&nbsp;</button>
+                            </td>
                     </tr>
                 </tbody>
             </table>
