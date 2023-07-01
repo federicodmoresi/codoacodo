@@ -53,8 +53,10 @@
                         <td align="right">{{ item.cantidad }}</td>
                         <td align="right">&nbsp; &nbsp; {{ item.precio }}</td>
                         <td>
-                            <button class="botonMas" @click="agregarAlCarrito(item)">&nbsp;&nbsp;<b>+</b>&nbsp;&nbsp;</button>
-                            <button class="botonMenos" @click="restarDelCarrito(item)">&nbsp;&nbsp;<b>-</b>&nbsp;&nbsp;</button>
+                            <button class="botonMas"
+                                @click="agregarAlCarrito(item)">&nbsp;&nbsp;<b>+</b>&nbsp;&nbsp;</button>
+                            <button class="botonMenos"
+                                @click="restarDelCarrito(item)">&nbsp;&nbsp;<b>-</b>&nbsp;&nbsp;</button>
                         </td>
                         <td style="display: none;"> {{total=item.precio*item.cantidad}}</td>
 
@@ -66,6 +68,18 @@
 
             <p>TOTAL DEL CARRITO $ {{total}}</p>
 
+        </div>
+        <div class="pie-pagina">
+
+            <footer>
+                <a href="http://www.facebook.com" target="_blank" rel="noopener"><img src="iconos/002-facebook.png"
+                        alt=""></a>
+                <a href="http://www.instagram.com" target="_blank" rel="noopener"><img
+                        src="iconos/001-instagram.png" alt=""></a>
+                <a href="https://wa.me/+549111111111" target="_blank" rel="noopener"><img
+                        src="iconos/003-whatsapp.png" alt=""></a>
+                <p class="copyright">&copy Copyright Codo a Codo 2023 - Comisión 23007</p>
+            </footer>
         </div>
 
 
