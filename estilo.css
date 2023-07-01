@@ -327,9 +327,9 @@ form label {
     .clima {
         display: none;
     }
-}
-.boton_carrito{
-    font-size: 13px;
+    .boton_carrito{
+        width: 35%;
+    }
 }
 
 @media only screen and (max-width: 800px) {
