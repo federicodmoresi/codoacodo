@@ -16,6 +16,53 @@ body {
 
 }
 
+.carrito h3 {
+    text-align: center;
+    color: #5b5c5d;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 5px 5px 0 0;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .carrito p {
+    text-align: right;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .carrito table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  .carrito th,
+  .carrito td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .carrito th {
+    background: linear-gradient(rgb(202, 201, 201), rgb(90, 89, 89));
+    color: #fff;
+  }
+  .carrito tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .carrito tr:last-child {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .carrito .total {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px
+  }
+  
 .carrito{
     display: grid;
     grid-area: cuerpo;
@@ -23,17 +70,6 @@ body {
     margin-top: 10px;
     padding: 20px;
     align-content: space-around;
-    
-}
-.carrito p{
-    text-align: right;
-    font-weight: bold;
-    margin: 100px 50px 0 0;
-}
-
-.carrito tr td{
-    padding: 10px;
-    text-align: center;
 }
 
 .botonMas{
