@@ -27,43 +27,47 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 24px;
     font-weight: bold;
-  }
-  .carrito p {
+}
+
+.carrito p {
     text-align: right;
     font-weight: bold;
     margin: 20px 0;
-  }
-  
-  .carrito table {
+}
+
+.carrito table {
     width: 100%;
     border-collapse: collapse;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  }
-  .carrito th,
-  .carrito td {
+}
+
+.carrito th,
+.carrito td {
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #ccc;
-  }
-  
-  .carrito th {
+}
+
+.carrito th {
     background: linear-gradient(rgb(202, 201, 201), rgb(90, 89, 89));
     color: #fff;
-  }
-  .carrito tr:last-child td {
+}
+
+.carrito tr:last-child td {
     border-bottom: none;
-  }
-  
-  .carrito tr:last-child {
+}
+
+.carrito tr:last-child {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  .carrito .total {
+}
+
+.carrito .total {
     margin-top: 30px;
     font-weight: bold;
     font-size: 20px
-  }
-  
-.carrito{
+}
+
+.carrito {
     display: grid;
     grid-area: cuerpo;
     text-align: center;
@@ -72,8 +76,8 @@ body {
     align-content: space-around;
 }
 
-.botonMas{
-    margin:5px;
+.botonMas {
+    margin: 5px;
     width: 80px;
     height: 50px;
     font-size: 20px;
@@ -92,10 +96,10 @@ body {
     background: rgb(11, 118, 25);
     transform: scale(1.1);
 
-}   
+}
 
-.botonMenos{
-    margin:5px;
+.botonMenos {
+    margin: 5px;
     width: 80px;
     height: 50px;
     font-size: 20px;
@@ -336,7 +340,7 @@ form label {
     text-transform: lowercase;
 }
 
-.boton_ingresar{
+.boton_ingresar {
     margin-bottom: 250px;
     width: 20%;
     padding: 15px 0px;
@@ -349,6 +353,7 @@ form label {
     transition: 1s all;
     cursor: pointer;
 }
+
 .enviar {
     margin-left: 60px;
     width: 30%;
@@ -401,7 +406,7 @@ form label {
 
 }
 
-.boton_carrito{
+.boton_carrito {
     width: 20%;
     padding: 15px 0px;
     font-size: 18px;
@@ -419,7 +424,7 @@ form label {
 
     background: rgb(11, 118, 25);
     transform: scale(1.05);
-  
+
 }
 
 
@@ -442,7 +447,8 @@ form label {
     .clima {
         display: none;
     }
-    .boton_carrito{
+
+    .boton_carrito {
         width: 35%;
     }
 }
@@ -456,7 +462,8 @@ form label {
             "cuerpo"
             "pie";
     }
-    .boton_carrito{
+
+    .boton_carrito {
         font-size: 15px;
         width: 30%;
     }
@@ -603,7 +610,8 @@ form label {
         font-size: 18px;
         width: 65%;
     }
-    .boton_carrito{
+
+    .boton_carrito {
         font-size: 15px;
         width: 65%;
     }

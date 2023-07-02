@@ -6,7 +6,7 @@ const app = Vue.createApp({
       productos: [],
       mostrarCarrito: false,
       carrito: [],
-      total:0
+      total: 0
     };
   },
   created() {
