@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar producto</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo2.css">
+  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -25,23 +27,35 @@
                 <a href="index.html">Desconectar</a>
             </header>
         </nav>
-        <h1>Agregar Productos al Sistema</h1>
-        <form id="formulario">
-            <label for="codigo">Código:</label>
-            <input type="text" id="codigo" name="codigo" required><br>
+        
+            <div class="box">
+                <div class="box-1"> <a href="altas.html">Alta de productos</a> </div>
+                <div class="box-1"> <a href="listado.html">Listado de productos</a> </div>
+                <div class="box-1"> <a href="modificaciones.html">Modificar datos de productos</a> </div>
+                <div class="box-1"> <a href="listadoEliminar.html">Eliminar productos</a></div>
+            </div>   
+            <div class="form">
+            </form>
+            <h1>Agregar Productos al Sistema</h1>
+            <form id="formulario">
+                <label for="codigo">Código:</label>
+                <input type="text" id="codigo" name="codigo" required><br>
 
-            <label for="descripcion">Descripción:</label>
-            <input type="text" id="descripcion" name="descripcion" required><br>
+                <label for="descripcion">Descripción:</label>
+                <input type="text" id="descripcion" name="descripcion" required><br>
 
-            <label for="cantidad">Cantidad:</label>
-            <input type="number" id="cantidad" name="cantidad" required><br>
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" required><br>
 
-            <label for="precio">Precio:</label>
-            <input type="number" step="0.01" id="precio" name="precio" required><br>
+                <label for="precio">Precio:</label>
+                <input type="number" step="0.01" id="precio" name="precio" required><br>
 
-            <button type="submit">Agregar Producto</button>
-            <a href="sistemaInterno.html">Menu principal</a>
-        </form>
+                <br>
+                <button type="submit">Agregar Producto</button>
+                
+            </form>
+            </div>
+        
     </div>
     <script src="js/altas.js"></script>
 </body>
