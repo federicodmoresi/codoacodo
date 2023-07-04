@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INFORMATICA ARGENTINA</title>
+    <title>Document</title>
     <script src="https://unpkg.com/vue@next"></script>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -29,9 +30,10 @@
                 <a href="carrito.html">&#128722;</a>
             </header>
         </nav>
-        <div id="app">
+
+        <div id="app" class="form2">
             <h1>Listado de productos</h1>
-            <table>
+            <table class="tablaProductos">
                 <thead>
                     <tr>
                         <th>Código</th>
@@ -44,29 +46,30 @@
                 <tbody>
 
                     <tr v-for="producto in productos" :key="producto.codigo">
-                            <td>{{ producto.codigo }}</td>
-                            <td>{{ producto.descripcion }}</td>
-                            <td align="right">{{ producto.cantidad }}</td>
-                            <td align="right">&nbsp; &nbsp; {{ producto.precio }}</td>
-                            <td>
-                                <button @click="agregarAlCarrito(producto)">&nbsp;&nbsp;<b>+</b>&nbsp;&nbsp;</button>
-                                <button @click="restarDelCarrito(producto)">&nbsp;&nbsp;<b>-</b>&nbsp;&nbsp;</button>
-                            </td>
+                        <td>{{ producto.codigo }}</td>
+                        <td>{{ producto.descripcion }}</td>
+                        <td align="right">{{ producto.cantidad }}</td>
+                        <td align="right">&nbsp; &nbsp; {{ producto.precio }}</td>
+                        <td>
+                            <button @click="agregarAlCarrito(producto)">&nbsp;&nbsp;<b>+</b>&nbsp;&nbsp;</button>
+                            <button @click="restarDelCarrito(producto)">&nbsp;&nbsp;<b>-</b>&nbsp;&nbsp;</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
             <a href="carrito.html">&#128722; Ir al carrito</a>
         </div>
     </div>
+
     <div class="pie-pagina">
 
         <footer>
             <a href="http://www.facebook.com" target="_blank" rel="noopener"><img src="iconos/002-facebook.png"
                     alt=""></a>
-            <a href="http://www.instagram.com" target="_blank" rel="noopener"><img
-                    src="iconos/001-instagram.png" alt=""></a>
-            <a href="https://wa.me/+549111111111" target="_blank" rel="noopener"><img
-                    src="iconos/003-whatsapp.png" alt=""></a>
+            <a href="http://www.instagram.com" target="_blank" rel="noopener"><img src="iconos/001-instagram.png"
+                    alt=""></a>
+            <a href="https://wa.me/+549111111111" target="_blank" rel="noopener"><img src="iconos/003-whatsapp.png"
+                    alt=""></a>
             <p class="copyright">&copy Copyright Codo a Codo 2023 - Comisión 23007</p>
         </footer>
     </div>
