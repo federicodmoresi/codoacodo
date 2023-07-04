@@ -186,6 +186,24 @@ body {
 
 }
 
+#link_listado{
+    width: 100%;
+    color: rgb(15, 227, 43);
+    padding: 10px;
+    font-weight: bold;
+    background-color: #6b6a6a;
+    border-radius: 3px;
+    transition: 1s all;
+    cursor: pointer;
+    text-align: center;
+}
+.listadoCliente{
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+
 .grillaNosotros {
     grid-area: cuerpo;
     max-width: 60%;
@@ -453,6 +471,26 @@ form label {
     }
 }
 
+@media only screen and (max-width: 1050px) {
+
+    .grillaDeProductos {
+        display: grid;
+        grid-area: cuerpo;
+        grid-template-columns: auto auto;
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+    .listadoCliente{
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+}
+
 @media only screen and (max-width: 900px) {
     .contenedor {
         grid-template: auto auto auto auto/ 100%;
@@ -573,7 +611,11 @@ form label {
         opacity: 15%;
         padding: 10px;
     }
-
+    .listadoCliente{
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
     .menu {
         font-size: 0.8em;
         margin: 0px;
@@ -658,5 +700,4 @@ form label {
     .clima {
         display: none;
     }
-
 }
